@@ -1,15 +1,25 @@
 {
-  "name": "express-basic",
+  "name": "01.-hello-world",
   "version": "1.0.0",
-  "description": "server testing",
-  "main": "index.js",
+  "description": "testing",
+  "main": "server.mjs",
   "scripts": {
     "start": "node server.mjs",
+    "dev": "nodemon server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18.x.x"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "nanoid": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
